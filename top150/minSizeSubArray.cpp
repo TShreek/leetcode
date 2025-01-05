@@ -10,8 +10,7 @@ public:
             sum += nums[right];
             while(sum >= target){
                 minimum = min(minimum,right-left+1);
-                sum -= (nums[left]);
-                left++;
+                sum -= (nums[left++]);
             }
         }
         return (minimum != INT_MAX)? minimum : 0;
